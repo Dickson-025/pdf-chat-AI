@@ -1,0 +1,120 @@
+.pdf-preview-parent {
+    display: flex;
+}
+
+.w-50 {
+    width: 50%;
+    height: 660px;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.h-100 {
+    height: 100%;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.chat-input {
+    width: 100%;
+    margin: 0 1rem 0 1rem;
+    border-radius: 5%;
+}
+
+.chat-box {
+    height: 85%;
+    box-shadow: 1px -2px 5px 0px;
+    border-radius: 2% 2% 0% 0%;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    background-color: lightgray;
+    padding: 10px;
+    overflow: auto;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+.pdf-container {
+    scrollbar-width: none;
+    border-radius: 2%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 640px;
+    border: 1px solid black;
+    background-color: aliceblue;
+}
+
+.react-pdf__Page__canvas {
+    margin: 10px;
+}
+
+.userchat {
+    background: aliceblue;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.userresponse {
+    background: white;
+    padding: 10px;
+    margin: 10px 0 10px 0;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.ready-desc {
+    background: rgb(255, 230, 252);
+    color: purple;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+img {
+    align-self: baseline;
+}
+
+
+@media (max-width: 768px) {
+    .pdf-preview-parent {
+        flex-direction: column !important;
+    }
+
+    .pdf-preview-parent .w-50 {
+        width: 100% !important;
+        height: auto;
+    }
+
+    .chat-box {
+        height: 300px;
+        margin-bottom: 10px;
+    }
+
+    .pdf-container {
+        height: auto;
+        margin-top: 10px;
+        max-height: 500px;
+        overflow-y: auto;
+    }
+
+    .chat-input {
+        margin: 0.5rem;
+    }
+
+    .pdf-preview-parent > .w-50 > .d-flex {
+        flex-direction: row !important;
+        align-items: center;
+    }
+
+    img[alt="Send"] {
+        width: 36px;
+        margin-left: 8px;
+        cursor: pointer;
+    }
+}

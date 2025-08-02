@@ -1,0 +1,94 @@
+body{
+  background-color: aliceblue;
+}
+
+.card-upload{
+  box-shadow: 1px 1px 1px 1px;
+  border-radius: 10px;
+  padding: 2rem;
+  background: white;
+  cursor: pointer;
+  width: 330px;
+}
+
+.upload{
+  background-color: aliceblue;
+  padding: 0.5rem;
+  border-radius: 100%;
+}
+
+.upload-subtitle{
+  font-weight: 200;
+  font-size: small;
+}
+
+.upload-title{
+  font-weight: 500;
+  font-size: medium;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center; 
+}
+
+.circle-loader{
+    padding: 6%;
+    border: 5px solid rgb(177, 177, 239);
+    border-radius: 100%;
+    margin-right: 10px;
+    border-top-color: rgb(196 94 255);
+    animation: rotate linear infinite 3s;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.content-between{
+    justify-content: space-between;
+}
+
+p {
+    margin: 0px;
+}
+
+.w-50{
+    width: 50%
+}
+
+.w-100{
+    width: 100%;
+}
+
+.loader-card {
+    color: blueviolet;
+    width: 15rem;
+}
+
+.linear-loader{
+    margin-top: 10px;
+    width: 100%;
+    height: 8px;
+    background-color: #e9d5ff;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress-fill{
+    height: 100%;
+    background-color: #7c3aed;
+    border-radius: 5px;
+    transition: width 0.2s ease;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
