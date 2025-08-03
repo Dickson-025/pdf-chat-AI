@@ -24,5 +24,8 @@
     "mysql2": "^3.14.2",
     "openai": "^5.11.0",
     "pdf-parse": "^1.1.1"
+  },
+  "devDependencies": {
+    "rollup": "4.14.3"
   }
 }
