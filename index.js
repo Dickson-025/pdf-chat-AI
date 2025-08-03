@@ -56,7 +56,7 @@ const Resume = model('resume', mongoSchema)
 
 const upload = multer({'dest': "/tmp/upload"});
 
-const frontendPath = path.join(__dirname, 'pdf-chat', 'dist', 'pdf-chat'); 
+const frontendPath = path.join(__dirname, 'pdf-chat', 'dist'); 
 
 app.use(express.static(frontendPath));
 
