@@ -92,14 +92,14 @@ img {
     }
 
     .chat-box {
-        height: 300px;
+        height: 450px;
         margin-bottom: 10px;
     }
 
     .pdf-container {
         height: auto;
         margin-top: 10px;
-        max-height: 500px;
+        max-height: 600px;
         overflow-y: auto;
     }
 

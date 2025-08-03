@@ -12,11 +12,12 @@ import ReactMarkdown from 'react-markdown';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 
+// pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 pdfjs.GlobalWorkerOptions.workerSrc = workerUrl.default || workerUrl;
 
 
 const PdfPreview = ({uploadfile, SetUploadFile}) => {
-  const url = "http://localhost:4000/";
+  const url = "https://pdf-chat-ai-oixn.onrender.com/";
   const [chatinput, setInput] = useState('');
   const [userchat, SetUserChat] = useState([]);
   const [numPages, setNumPages] = useState(null);

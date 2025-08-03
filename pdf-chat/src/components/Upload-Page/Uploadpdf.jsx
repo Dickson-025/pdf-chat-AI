@@ -10,7 +10,7 @@ const Uploadpdf = ({SetUploadFile}) => {
   const [uploadflag, setUploadflag] = useState(false);
   const [progress, setProgress] = useState(0);
   const [file, setFile] = useState('');
-  const url = 'http://localhost:4000/';
+  const url = 'https://pdf-chat-ai-oixn.onrender.com/';
   // const navigate = useNavigate()
     
   const uploadCardClick = () => {

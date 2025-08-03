@@ -18,7 +18,7 @@ import axios from 'axios';
 function App() {
   // const [parentfile, SetParentFile] = useState(null);
   const [uploadfile, SetUploadFile] = useState(null);
-  const url = "http://localhost:4000/";
+  const url = "https://pdf-chat-ai-oixn.onrender.com/";
   // const [previewfile, SetPreviewFile] = useState(null);
   console.log('22', uploadfile);
   
