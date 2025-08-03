@@ -56,10 +56,12 @@ const Resume = model('resume', mongoSchema)
 
 const upload = multer({'dest': "/tmp/upload"});
 
-app.use(express.static(path.join(__dirname, 'pdf-chat/dist')));
+const frontendPath = path.join(__dirname, 'pdf-chat', 'dist', 'pdf-chat'); 
 
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'pdf-chat/dist/index.html'));
+app.use(express.static(frontendPath));
+
+app.get('/', (req, res) => {
+  res.sendFile(path.join(frontendPath, 'index.html'));
 });
 
 app.post("/api/upload", upload.single("file"), async (req, res) => {
@@ -78,6 +80,7 @@ app.post("/api/upload", upload.single("file"), async (req, res) => {
 
         const saved = await result.save();
 
+        fs.unlink(req.file.path, () => { });
         // const [result] = await db.execute("INSERT INTO resume (filename, content, contenttext) VALUES (?, ?, ?)", [
         //     req.file.originalname,
         //     fileBuffer.toString('base64'),
