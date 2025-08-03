@@ -36,7 +36,7 @@ let db;
     }
 })()
 
-const upload = multer({'dest': "/upload"});
+const upload = multer({'dest': "/tmp/upload"});
 
 app.use(express.static(path.join(__dirname, 'pdf-chat/dist')));
 
