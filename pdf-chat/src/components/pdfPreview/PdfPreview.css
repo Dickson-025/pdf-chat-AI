@@ -88,7 +88,14 @@ img {
 
     .pdf-preview-parent .w-50 {
         width: 100% !important;
-        height: auto;
+        height: auto !important;
+    }
+
+    .pdf-container,
+    .react-pdf__Page__canvas {
+        width: 100% !important;
+        max-width: 100% !important;
+        height: auto !important;
     }
 
     .chat-box {
