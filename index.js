@@ -58,7 +58,7 @@ const upload = multer({'dest': "/tmp/upload"});
 
 app.use(express.static(path.join(__dirname, 'pdf-chat/dist')));
 
-app.get('/', (req, res) => {
+app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'pdf-chat/dist/index.html'));
 });
 
