@@ -1,0 +1,45 @@
+# 📘 PDF Chat Assistant
+
+An AI-powered web app that lets you upload a PDF, preview it, and ask questions about its content. Built with React (frontend), Express.js (backend), MySQL (database), and OpenAI GPT (AI Q&A).
+
+---
+
+## ⚙️ Features
+
+- 📤 Upload a PDF document
+- 🖼️ Preview the PDF beside the chat
+- 💬 Ask questions related to the PDF
+- 🤖 Get AI-generated answers using OpenAI
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend:** React, React Bootstrap, react-pdf
+- **Backend:** Express.js, pdf-parse, OpenAI SDK
+- **Database:** MongoDb
+- **AI:** OpenAI GPT-4
+
+---
+
+## 🚀 Getting Started
+
+### 📦 Prerequisites
+
+- Node.js (v18+)
+- Mongo
+- An OpenAI API Key ([get one here](https://platform.openai.com/account/api-keys))
+
+---
+
+## 🔧 Installation
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/yourusername/pdf-chat-assistant.git
+cd pdf-chat-assistant
+
+## .env
+OPENAI_API_KEY=your_openai_api_key_here
+MONGO_URL=your_mongo_url
