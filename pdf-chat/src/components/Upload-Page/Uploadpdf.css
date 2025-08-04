@@ -8,7 +8,8 @@ body{
   padding: 2rem;
   background: white;
   cursor: pointer;
-  width: 330px;
+  width: auto;
+  max-width: 330px;
 }
 
 .upload{
@@ -32,7 +33,6 @@ body{
   margin: 0 auto;
   padding: 2rem;
   text-align: center; 
-  width: -webkit-fill-available;
 }
 
 .circle-loader{
@@ -92,4 +92,10 @@ p {
     100% {
         transform: rotate(360deg);
     }
+}
+
+@media (max-width: 768px) {
+  #root{
+    width: -webkit-fill-available;
+  }
 }
